@@ -1,0 +1,125 @@
+/* колір основного тексту:  #757575; */
+/* вторичний колір тексту:  #212121 */
+/* Білий:  #ffffff */
+/* Акцентний:  #2196F3 */
+/* Перший колір фону: #E5E5E5 */
+/* вторичний колір фону:  #F5F4FA */
+
+
+:root {
+    --primary-text-color: #757575;
+    --title-text-color:  #212121;
+    --accent-color: #2196F3;
+    --primary-bg-color: #E5E5E5;
+    --text-hero-color: #ffffff;
+}
+
+body {
+    background-color: #fff;
+    color: var(--primary-text-color);
+
+    font-family: Roboto, sans-serif;
+}
+
+
+
+            /* styles do logo */
+.logo-span {
+    color: var(--accent-color);
+}
+
+.logo {
+    color: var(--title-text-color);
+}
+
+.logo, .logo-span {
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
+
+            /* стилі до силок */
+.list {
+    list-style: none;
+}
+
+            /* styles do site-nav */
+.site-nav .link{
+    color: var(--accent-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+}
+
+.site-nav .link:hover, 
+.site-nav .link:focus {
+    color: var(--title-text-color);
+}
+
+            /* Styles do auth-link  (nav) */
+.auth-nav .auth-sent {
+    color: var(--title-text-color);
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.auth-nav .auth-sent:hover,
+.auth-nav .auth-sent:focus {
+    color: var(--accent-color)
+}
+
+
+
+            /* Styles do hero-title  (Блок героя ) */
+.hero .hero-title {
+    color: var(--text-hero-color);
+}
+
+.hero-title {
+    color: var(--text-hero-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.hero-button {
+    background-color: var(--accent-color);
+
+    color: var(--text-hero-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    /* display: flex; */
+    align-items: center;
+    text-align: center;
+}
+
+
+
+            /* Загальні стилі до section */
+.section-title {
+    color: var(--title-text-color);
+}
+
+
+
+            /* Stiles do  feature   (Наші достоєнстка)  */
+.feature-list .title {
+    color: var(--title-text-color);
+}
+
+
+
+            /* Stiles do our team  (Наша команда) */
+.team-list .title {
+    color: var(--title-text-color);
+}
