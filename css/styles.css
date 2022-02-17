@@ -10,8 +10,7 @@
     --primary-text-color: #757575;
     --title-text-color:  #212121;
     --accent-color: #2196F3;
-    --primary-bg-color: #E5E5E5;
-    --text-hero-color: #ffffff;
+    --text-white-color: #ffffff;
 }
 
 body {
@@ -41,7 +40,7 @@ body {
 
 
             /* стилі до силок */
-.list {
+.list  {
     list-style: none;
 }
 
@@ -74,15 +73,13 @@ body {
     color: var(--accent-color)
 }
 
-
-
             /* Styles do hero-title  (Блок героя ) */
 .hero .hero-title {
-    color: var(--text-hero-color);
+    color: var(--text-white-color);
 }
 
 .hero-title {
-    color: var(--text-hero-color);
+    color: var(--text-white-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -94,7 +91,7 @@ body {
 .hero-button {
     background-color: var(--accent-color);
 
-    color: var(--text-hero-color);
+    color: var(--text-white-color);
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
@@ -104,22 +101,19 @@ body {
 }
 
 
-
             /* Загальні стилі до section */
 .section-title {
     color: var(--title-text-color);
 }
-
-
 
             /* Stiles do  feature   (Наші достоєнстка)  */
 .feature-list .title {
     color: var(--title-text-color);
 }
 
-
-
             /* Stiles do our team  (Наша команда) */
 .team-list .title {
     color: var(--title-text-color);
 }
+
+            /* Stiles do footer  (address) */
