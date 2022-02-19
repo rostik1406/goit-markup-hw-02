@@ -78,12 +78,8 @@ body {
 }
 
             /* Styles do hero-title  (Блок героя ) */
-.hero .hero-title {
-    color: var(--text-white-color);
-}
-
 .hero-title {
-    color: var(--text-white-color);
+    color: var(--accent-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
