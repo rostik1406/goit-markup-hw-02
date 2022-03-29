@@ -118,3 +118,6 @@ body {
 }
 
             /* Stiles do footer  (address) */
+.footer-title {
+    color: var(--title-text-color);
+}
