@@ -2,9 +2,6 @@
 /* вторичний колір тексту:  #212121 */
 /* Білий:  #ffffff */
 /* Акцентний:  #2196F3 */
-/* Перший колір фону: #E5E5E5 */
-/* вторичний колір фону:  #F5F4FA */
-
 
 :root {
     --primary-text-color: #757575;
@@ -37,11 +34,11 @@ body {
     font-size: 26px;
     line-height: 1.19;
 
-    /* text-decoration: none; */
+    text-decoration: none;
 }
 
 
-            /* стилі до силок */
+            /*  загальні стилі до списків */
 .list  {
     list-style: none;
 }
@@ -57,14 +54,14 @@ body {
     text-decoration: none;
 }
 
-.site-nav .link:hover, 
-.site-nav .link:focus {
-    color: var(--title-text-color);
+.site-nav .auth-sent:hover, 
+.site-nav .auth-sent:focus {
+    color: var(--accent-color);
 }
 
             /* Styles do auth-link  (nav) */
 .auth-nav .auth-sent {
-    color: var(--title-text-color);
+    color: var(--primary-text-color);
 
     font-weight: 500;
     font-size: 14px;
@@ -72,8 +69,8 @@ body {
     letter-spacing: 0.02em;
 }
 
-.auth-nav .auth-sent:hover,
-.auth-nav .auth-sent:focus {
+.auth-nav .list:hover,
+.auth-nav .list:focus {
     color: var(--accent-color)
 }
 
@@ -107,8 +104,12 @@ body {
     color: var(--title-text-color);
 }
 
+.section-list .title {
+    color: var(--title-text-color);
+}
+
             /* Stiles do  feature   (Наші переваги)  */
-.feature-list .title {
+.features-list .title {
     color: var(--title-text-color);
 }
 
