@@ -2,123 +2,126 @@
 /* вторичний колір тексту:  #212121 */
 /* Білий:  #ffffff */
 /* Акцентний:  #2196F3 */
+/* Колір фону футера #2F303A */
 
 :root {
-    --primary-text-color: #757575;
-    --title-text-color:  #212121;
-    --accent-color: #2196F3;
-    --text-white-color: #ffffff;
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --text-white-color: #ffffff;
+  --background-footer-color: #2f303a;
 }
 
 body {
-    background-color: #fff;
-    color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
 
-    font-family: Roboto, sans-serif;
+  color: var(--primary-text-color);
 }
 
-
-
-            /* styles do logo */
-.logo-span {
-    color: var(--accent-color);
-}
-
+/* styles do logo */
 .logo {
-    color: var(--title-text-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  text-decoration: none;
+
+  color: #2196f3;
 }
 
-.logo, .logo-span {
-    font-family: Raleway, sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-
-    text-decoration: none;
+.logo-dark {
+  color: var(--title-text-color);
 }
 
-
-            /*  загальні стилі до списків */
-.list  {
-    list-style: none;
+.logo-light {
+  color: var(--text-white-color);
 }
 
-            /* styles do site-nav */
-.site-nav .link{
-    color: var(--accent-color);
+/* styles do site-nav */
+.site-nav .link {
+  color: var(--accent-color);
 
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 
-    text-decoration: none;
+  text-decoration: none;
+
+  color: var(--title-text-color);
 }
 
-.site-nav .auth-sent:hover, 
-.site-nav .auth-sent:focus {
-    color: var(--accent-color);
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
 }
 
-            /* Styles do auth-link  (nav) */
-.auth-nav .auth-sent {
-    color: var(--primary-text-color);
-
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
+/* Styles do auth-link  (nav) */
+.auth-nav  .link {
+    color: var(--primary-text-color); 
 }
 
-.auth-nav .list:hover,
-.auth-nav .list:focus {
-    color: var(--accent-color)
+.auth-nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
+.auth-nav .link:hover,
+.auth-nav .link:focus {
+  color: var(--accent-color);
+}
 
-            /* Styles do hero-title  (Блок героя ) */
+/* Styles do hero-title  (Блок героя ) */
 .hero-title {
-    color: var(--accent-color);
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+  color: var(--accent-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .hero-button {
-    background-color: var(--accent-color);
+  background-color: var(--accent-color);
 
-    color: var(--text-white-color);
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.87;
-    /* display: flex; */
-    align-items: center;
-    text-align: center;
+  color: var(--text-white-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  /* display: flex; */
+  align-items: center;
+  text-align: center;
 }
 
-
-            /* Загальні стилі до section */
+/* Загальні стилі до section */
 .section-title {
-    color: var(--title-text-color);
+  color: var(--title-text-color);
 }
 
-.section-list .title {
-    color: var(--title-text-color);
+.features-title,
+.team-title {
+  color: var(--title-text-color);
 }
 
-            /* Stiles do  feature   (Наші переваги)  */
-.features-list .title {
-    color: var(--title-text-color);
+/*  загальні стилі до списків */
+.list {
+  list-style: none;
 }
 
-            /* Stiles do our team  (Наша команда) */
-.team-list .title {
-    color: var(--title-text-color);
-}
+/* загальні стилі до footera */
 
-            /* Stiles do footer  (address) */
-.footer-title {
-    color: var(--title-text-color);
+
+.address {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+/* or 171% */
+
+
 }
