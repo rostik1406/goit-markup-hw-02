@@ -129,6 +129,47 @@ body {
 }
 
 .links {
-    color: var(--primary-text-color);
-    text-decoration: none;
+  color: var(--primary-text-color);
+  text-decoration: none;
+}
+
+/* СТИЛІ ДО ПОРТФОЛІО */
+.navigation-list {
+  list-style: none;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+}
+
+.navigation-list .link:hover,
+.navigation-list .link:focus {
+  color: var(--accent-color);
+}
+
+.item > .link {
+  color: var(--title-text-color);
+}
+
+.port-list {
+  list-style: none;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+.port-link {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+
+.port-title {
+  color: var(--title-text-color);
+
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+
+  letter-spacing: 0.06em;
 }
