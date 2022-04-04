@@ -142,12 +142,12 @@ body {
   line-height: 1.62;
 }
 
-.navigation-list .link:hover,
-.navigation-list .link:focus {
+.navigation-list .button:hover,
+.navigation-list .button:focus {
   color: var(--accent-color);
 }
 
-.item > .link {
+.button {
   color: var(--title-text-color);
 }
 
