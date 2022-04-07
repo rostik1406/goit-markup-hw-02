@@ -26,6 +26,8 @@ body {
   font-size: 26px;
   line-height: 1.19;
 
+  text-decoration: none;
+
   color: var(--accent-color);
 }
 
@@ -75,6 +77,7 @@ body {
 
 /* Styles do hero-title  (Блок героя ) */
 .hero-title {
+  background-color: var(--background-footer-color);
   color: var(--text-white-color);
   font-weight: 900;
   font-size: 44px;
@@ -86,24 +89,14 @@ body {
 
 .hero-button {
   background-color: var(--accent-color);
-
   color: var(--text-white-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  /* display: flex; */
   align-items: center;
   text-align: center;
-}
-
-/* Загальні стилі до section */
-.section-title {
-  color: var(--title-text-color);
-}
-
-.features-title,
-.team-title {
-  color: var(--title-text-color);
+  letter-spacing: 0.06em;
+  cursor: pointer;
 }
 
 /*  загальні стилі до списків */
@@ -111,60 +104,100 @@ body {
   list-style: none;
 }
 
-/* загальні стилі до сидок */
+/* загальні стилі до силок */
 .link {
   text-decoration: none;
 }
 
-/* загальні стилі до footera */
-.address {
-  font-style: normal;
-  font-weight: 400;
+/* Cтилі до section Наші переваги */
+.features-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.features-text {
   font-size: 14px;
   line-height: 1.71;
 }
 
-.maps {
-  color: var(--text-white-color);
+/*  section Чем мы занимаемся  */
+.section-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
 }
 
-.links {
+/*  section Наша команда */
+.team-title {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+.team-text {
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+/* загальні стилі до footera */
+.footer {
+  background-color: var(--background-footer-color);
+}
+
+.address {
+  font-style: normal;
+}
+
+.address-list .maps {
+  color: var(--text-white-color);
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+.address-list .links {
   color: var(--primary-text-color);
   text-decoration: none;
+  font-size: 14px;
+  line-height: 1.71;
 }
 
 /* СТИЛІ ДО ПОРТФОЛІО */
 .navigation-list {
   list-style: none;
-
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
 }
 
 .navigation-list .button:hover,
 .navigation-list .button:focus {
-  color: var(--accent-color);
+  background-color: var(--accent-color);
+  color: var(--text-white-color);
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .button {
   color: var(--title-text-color);
-}
-
-.port-list {
-  list-style: none;
-
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
-.port-link {
+.filter-list {
+  list-style: none;
+}
+
+.filter-link {
   text-decoration: none;
   color: var(--primary-text-color);
 }
 
-.port-title {
+.filter-title {
   color: var(--title-text-color);
 
   font-weight: 700;
@@ -172,4 +205,9 @@ body {
   line-height: 2;
 
   letter-spacing: 0.06em;
+}
+
+.filter-text {
+  font-size: 16px;
+  line-height: 1.87;
 }
