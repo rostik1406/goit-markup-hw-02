@@ -2,14 +2,14 @@
 /* вторичний колір тексту:  #212121 */
 /* Білий:  #ffffff */
 /* Акцентний:  #2196F3 */
-/* Колір фону футера #2F303A */
+/* Колір фону г-ф #2F303A */
 
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --text-white-color: #ffffff;
-  --background-footer-color: #2f303a;
+  --background-h-f-color: #2f303a;
 }
 
 body {
@@ -58,6 +58,10 @@ body {
   color: var(--accent-color);
 }
 
+.nav-list .link.current {
+  color: var(--accent-color);
+}
+
 /* Styles do auth-link  (nav) */
 .auth-nav .link {
   color: var(--primary-text-color);
@@ -76,8 +80,10 @@ body {
 }
 
 /* Styles do hero-title  (Блок героя ) */
+.hero {
+  background-color: var(--background-h-f-color);
+}
 .hero-title {
-  background-color: var(--background-footer-color);
   color: var(--text-white-color);
   font-weight: 900;
   font-size: 44px;
@@ -97,6 +103,20 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
+}
+
+/* Стилі до скривающихся заголовків */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowarp;
+  clip-path: insert(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /*  загальні стилі до списків */
@@ -132,6 +152,10 @@ body {
 }
 
 /*  section Наша команда */
+.team {
+  background-color: #f5f4fa;
+}
+
 .team-title {
   color: var(--title-text-color);
   font-weight: 500;
@@ -146,7 +170,7 @@ body {
 
 /* загальні стилі до footera */
 .footer {
-  background-color: var(--background-footer-color);
+  background-color: var(--background-h-f-color);
 }
 
 .address {
@@ -160,7 +184,7 @@ body {
 }
 
 .address-link {
-  color: var(--primary-text-color);
+  color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   font-size: 14px;
   line-height: 1.71;
@@ -175,17 +199,19 @@ body {
 .navigation-list .button:focus {
   background-color: var(--accent-color);
   color: var(--text-white-color);
-  border-radius: 4px;
-  cursor: pointer;
 }
 
 .button {
+  background-color: #f5f4fa;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .filter-list {
